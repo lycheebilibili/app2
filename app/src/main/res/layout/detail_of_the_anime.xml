@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DetailOfTheAnime"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="156dp"
+        android:layout_margin="30dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/main_image">
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@id/main_image"
+        android:textSize="25sp"
+        tools:text="duolagemeng"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/main_name"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="104dp"
+        android:id="@+id/heart"/>
+
+</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        tools:text="try"
+        android:textSize="20sp"
+        android:id="@+id/main_summary"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write your memory~"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/editContent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/textContent"
+        android:textSize="20sp"
+        tools:text="none of memory"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save/edit"
+            android:textColor="@color/colorBlack"
+            android:background="@color/colorButton"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/save_or_edit"/>
+</LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/animeMidia"
+        android:layout_width="56dp"
+        android:layout_height="80dp"
+        android:layout_margin="12dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/five_second"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/animeMidia"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        tools:text="我的小多啦"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/animeName"/>
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@id/animeMidia"
+        android:layout_below="@id/animeName"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="15sp"
+        tools:text="这是一个关于小多啦的故事。在很久很久以前，有一个村子，村子里有很多老鼠，他们成群结队得经过村民加取图哦东西吃，"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:id="@+id/animeSummary"
+        />
+
+</RelativeLayout>
